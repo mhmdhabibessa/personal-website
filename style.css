@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colors{
+    padding: 5px;
+    background-color: azure;
+}
+
+p{
+    color: red;
+    transition: 500ms;
+    margin: auto;
+    width: 200px;
+}
+.color {
+    background-color: bisque;
+    border-radius: 7px;
+    margin: 3px;
+    border: sandybrown 1px solid;
+    padding: 4px;
+    width: 100px;
+
+} 
+button {
+    background-color: rgb(101, 70, 32);
+    border-radius: 7px;
+    color: white;
+    margin: 3px;
+    border: sandybrown 1px solid;
+    padding: 4px;
+    width: 100px;
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Default: Mobile-first (1 column, full width) */
+.grid-container {
+    grid-template-columns: 100%;
+}
+
+.item {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* Tablet: 2 columns with fixed width */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 300px 300px; /* Each column is 300px wide */
+        justify-content: center; /* Center the grid */
+    }
+}
+
+/* Desktop: 3 columns with fixed width */
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: 300px 300px 300px; /* Each column is 300px wide */
+        justify-content: center; /* Center the grid */
+    }
+}
